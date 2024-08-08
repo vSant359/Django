@@ -5,10 +5,6 @@ from django.views import View
 from .models import Teachers
 import json
 
-# Aqui estamos usando o decorator @csrf_exempt para que o Django não bloqueie as requisições que venham de origens não autenticadas.
-
-
-#A classe StudentListView lida com dois tipos de requisição: "get" para obter a lista de todos os estudantes matriculados;
 
 class TeacherListView(View):
     def get(self, request):
